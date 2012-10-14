@@ -59,12 +59,13 @@
         <extensions>true</extensions>
         <configuration>
           <instructions>
-            <Export-Package>org.mozilla.javascript.*</Export-Package>
+            <!-- FIX #1: Use this for embedded dependencies -->
+            <_exportcontents>org.mozilla.javascript.*</_exportcontents>
             <Import-Package>
               org.apache.xmlbeans.*;resolution:=optional,
               *
             </Import-Package>
-            <Embed-Dependency>*;scope=compile|runtime</Embed-Dependency>
+            <Embed-Dependency>*;scope=compile|runtime;inline=false</Embed-Dependency>
           </instructions>
         </configuration>
       </plugin>
