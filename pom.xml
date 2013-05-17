@@ -8,7 +8,7 @@
   </parent>
   <groupId>de.matrixweb.osgi.wrapped</groupId>
   <artifactId>osgi-wrapped-rhino</artifactId>
-  <version>1.0.1.7R4-SNAPSHOT</version>
+  <version>1.0.1.7R4</version>
   <packaging>bundle</packaging>
 
   <name>OSGi Bundle Rhino</name>
