@@ -8,7 +8,7 @@
   </parent>
   <groupId>de.matrixweb.osgi.wrapped</groupId>
   <artifactId>osgi-wrapped-rhino</artifactId>
-  <version>1.7R5-SNAPSHOT</version>
+  <version>1.0.1.7R4-SNAPSHOT</version>
   <packaging>bundle</packaging>
 
   <name>OSGi Bundle Rhino</name>
@@ -39,6 +39,7 @@
       <groupId>org.mozilla</groupId>
       <artifactId>rhino</artifactId>
       <version>1.7R4</version>
+      <optional>true</optional>
     </dependency>
   </dependencies>
   <build>
@@ -65,7 +66,7 @@
               org.apache.xmlbeans.*;resolution:=optional,
               *
             </Import-Package>
-            <Embed-Dependency>*;scope=compile|runtime;inline=false</Embed-Dependency>
+            <Embed-Dependency>*;scope=compile|runtime;inline=true</Embed-Dependency>
           </instructions>
         </configuration>
       </plugin>
